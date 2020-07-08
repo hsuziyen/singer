@@ -1,0 +1,210 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>偶像團體</title>
+    <link href="~/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/bootstrap-4.1.3-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="~/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        .carousel .carousel-item img {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="margin-top:75px;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="~/Images/if_travel management_47413.ico" width="40" height="40"
+                 class="d-inline-block align-top" alt="">
+            偶像團體
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">日本</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       role="button" data-toggle="dropdown">
+                        韓國
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">akb48</a>
+                        <a class="dropdown-item" href="#">F(X)</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">少女時代</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       role="button" data-toggle="dropdown">
+                       大陸
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"
+                           href="https://tsfs.forest.gov.tw/cht/index.php?code=list&ids=31">Tf boys</a>
+                        <a class="dropdown-item" href="#">X玖少年團</a>
+                        <a class="dropdown-item" href="#">uniq</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       role="button" data-toggle="dropdown">
+                        台灣
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">special</a>
+                        <a class="dropdown-item" href="#">5566</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">化學猴子</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">其他</a>
+                </li>
+            </ul>
+            <span class="navbar-text pr-4">--讀萬卷書，行萬里路--</span>
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="~/Images/30357593908_f9fed7c468_k.jpg"
+                             alt="First slide">
+                        <img src="~/images/akb48-1.jpg" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>akb48</h3>
+                            <p>
+                                AKB48是日本大型女子偶像團體，成立於2005年12月8日
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Images/42004217450_c622ccf1aa_k.jpg"
+                             alt="Second slide">
+                        <img src="~/images/f(x).jpg" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>F(x)</h3>
+                            <p> f(x)是SM娛樂於2009年推出的韓國女子組合初時由五名不同國籍的成員組成</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                        <img src="~/images/Uniq.jpg" alt="Third slide" />  
+                    <div class="carousel-caption d-none d-md-block">
+                            <h3>uniq</h3>
+                            <p>UNIQ是中國大陸樂華娛樂於2014年9月推出的中韓跨國男子偶像團體，由3位中國大陸成員、2位韓國成員組成。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="~/Images/43268813495_31da4925a2_k.jpg"
+                             alt="Third slide">
+                        <img src="~/images/5566.jpg" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>5566</h3>
+                            <p>
+                                5566，簡稱56，是臺灣喬傑立娛樂旗下的男子團體，
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators"
+                   role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators"
+                   role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-8 text-muted"
+                 style="background-color:#eef1cf;">
+                <section>
+                    <h2>AKB48</h2>
+                     
+                          
+                    <img src="~/images/akb48.jpg"class="img-thumbnail" />
+                    <p>
+                        AKB48是日本大型女子偶像團體，成立於2005年12月8日
+                    </p>
+                    
+                    <img src="~/images/akb48-1.jpg"class="img-thumbnail" /> 
+                     
+                    <p>
+                        繼AKB48後，秋元康以相近模式陸續於日本其他都市與海外成立SKE48、SDN48、NMB48、HKT48、NGT48、STU48、JKT48、BNK48、MNL48、AKB48 Team SH、AKB48 Team TP、SGO48、MUM48等姊妹團體，朝不同市場發展。
+                    </p>
+                </section>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 text-muted"
+                 style="background-color:#dcf2b7;">
+                <aside>
+                    <div class="card">
+                         
+                        <img src="~/images/f(x).jpg" class="card-img-top img-thumbnail" />  
+                         
+                        <div class="card-body">
+                            <h5 class="card-title">f(x)</h5>
+                            <p>
+                                f(x)是SM娛樂於2009年推出的韓國女子組合初時由五名不同國籍的成員組成
+                            </p>
+                            <a href="" http://fx.smtown.com/前往f(x) </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        
+                        <img src="~/images/Uniq.jpg"class="card-img-top img-thumbnail" /> 
+                         
+                        <div class="card-body">
+                            <h5 class="card-title">UNIQ</h5>
+                            <p>
+                                UNIQ是中國大陸樂華娛樂於2014年9月推出的中韓跨國男子偶像團體，由3位中國大陸成員、2位韓國成員組成。
+                            </p>
+                            <a href="www.yuehuamusic.com"
+                               class="btn btn-primary">前往 UNIQ</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 text-muted text-center"
+                 style="background-color:#969393;">
+                <footer>
+                    <p style="color:#ebe6e6;padding-top:5px;">
+                        &copy; @DateTime.Now.Year - 中國科技大學資管系二B
+                        1061461048 許芷嫣
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
